@@ -1,0 +1,32 @@
+# Aprendendo operadores relacionais
+
+
+if codicao1 and condicao2 
+V - V = V
+V - F = F
+F - F = F
+Só vai dar verdadeira a condição quando as 2 forem verdadeiras.
+
+if conidicao1 or condicao2 or condicao3
+V - F - F
+F - V - F
+F - F - V
+Se uma delas for verdadeira o código abaixo vai ser executado.
+
+
+
+1) Diga duas situações que devem ser verdades para ser autorizada a decolagem de um avião.
+R: A quantidade de combustível armazenada n avião deverá ser suficiente e a condição do clima deve ser estável. # motores ok
+# nao se trata do clima estar estável e sim o vento não muito forte.
+
+2) Diga duas validações necessárias para efetuar login com e-mail e senha.
+R: Na digitação do e-mail, será necessário colocar caracteres especiais válidos, com o @ e na senha, respeitar os parâmetros
+impostos pelo próprio sistema de login do site. #email valido e corresponder a senha cadastrada no e-mail
+
+3) Me diga de quais maneiras é possível utilizar para logar no site americanas.com utilizando a palavra "ou" na sua resposta.
+R: Você deve preencher os campos de login e senha para receber acesso ao painel do site ou logar indiretamente através do seu e-mail.
+# gmail ou conta microsoft ou email e senha normalmente.
+
+4) Me diga pelo menos 3 meios de transporte para ir da barra ao centro da cidade, utilizando a palavra "ou".
+R: Você tem três opções de transporte para ir da barra ao centro. São elas: carro ou metrô ou taxi.
+#bus ou metro ou carro
