@@ -13,7 +13,7 @@ x = int(input("Digite 1 caso queira somar um número e 0 caso queira ver o somat
 while x == 1:
     numero = int(input("Digite o número que gostaria de somar: "))
     somatorio = somatorio + numero
-    x = int(input("Digite 1 caso queira somar um número e 0 caso queiraver o somatório final: "))
+    x = int(input("Digite 1 caso queira somar um número e 0 caso queira ver o somatório final: "))
 
 print(somatorio)
 
