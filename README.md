@@ -1,13 +1,13 @@
 # senac_python
-Curso: python full stack dev
-Instituição: Senac RJ
-Início: 25/03/2024
-Término: 
-Professor: Caio Azeredo
+#Curso: python full stack dev
+#Instituição: Senac RJ
+#Início: 25/03/2024
+#Término: 
+#Professor: Caio Azeredo
 
-Arquivos
-    Aula
-        exercícios
+#Arquivos
+    #Aula
+        #exercícios
 
 
 
