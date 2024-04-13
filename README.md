@@ -1,5 +1,5 @@
 # SENAC | Python Full Stack Dev
-Repositório para documentar meus estudos durante o curso do [Senac RJ](https://www.rj.senac.br/).
+Repositório criado para documentar meus estudos durante o curso do [Senac RJ](https://www.rj.senac.br/).
 
 ## Documentação
 - [Documentação Python](https://docs.python.org/pt-br/3/tutorial/)
