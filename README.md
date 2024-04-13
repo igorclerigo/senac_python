@@ -1,13 +1,12 @@
-## Curso: python full stack dev
-## Curso: python full stack dev
-#Instituição: Senac RJ
-#Início: 25/03/2024
-#Término: 
-#Professor: Caio Azeredo
+# SENAC | Python Full Stack Dev
+Repositório para documentar meus estudos durante o curso do [Senac RJ](https://www.rj.senac.br/).
 
-#Arquivos
-    #Aula
-        #exercícios
+## Documentação
+- [Documentação Python](https://docs.python.org/pt-br/3/tutorial/)
+- [Documentação Github](https://docs.github.com/pt/get-started) 
+- [Documentação Git](https://git-scm.com/)
+
+
 
 
 
