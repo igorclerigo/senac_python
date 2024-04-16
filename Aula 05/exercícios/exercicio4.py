@@ -1,27 +1,14 @@
-# Sistema para transporte de aplicativo
+# Sistema de votação
 
-categoria = int(input("Senhor(a), me informe o número da categoria de serviço que gostaria de contratar: "))
+idade = int(input("Por favor, informe sua idade: "))
 
-# Condicional para determinar a categoria
+if idade >= 16:
+    print("Você pode votar, mas não é obrigado!")
 
-if categoria == 1:
-    nomedacategoria = "Black"
-
-elif categoria == 2:
-    nomedacategoria = "Confort"
-
-elif categoria == 3:
-    nomedacategoria = "Convencional"
-
-elif categoria == 4:
-    nomedacategoria = "Taxi"
+elif 18 <= idade < 70: 
+    print("Você é obrigado a votar.")
 
 else:
-    nomedacategoria = "Erro, categoria inválida"
+    print("Você pode votar, mas não há o dever.")
 
-# Exibindo o resultado
-    
-print(f"Você selecionou {nomedacategoria}")
-
-
-
+ 
