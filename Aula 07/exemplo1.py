@@ -14,3 +14,5 @@ for segundo in range (1,11)
 (comece em, repita até) -> valores (1, 11 acima)
 """
 
+# A diferença entre o WHILE e o FOR é que o while é usado quando queremos que o bloco de código seja repetido até que uma condição seja satisfeita e o 
+# for é usado quando se quer iterar sobre um bloco de código um número determinado de vezes. 

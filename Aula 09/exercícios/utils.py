@@ -1,18 +1,18 @@
 #  utils.py
 
-def dobro(numero):
+def dobro(a):
     #retorna o dobro do número fornecido.
-    return numero * 2
+    return a * 2
 
-def soma(numero1, numero2):
-    return numero1 + numero2
+def soma(a, b):
+    return a + b
 
-def multiplicacao(numero1, numero2):
-    return numero1 * numero2
+def multiplicacao(a, b):
+    return a * b
 
-def divisao(numero1, numero2):
-    return numero1 / numero2
+def divisao(a, b):
+    return a / b
 
-def subtracao(numero1, numero2):
-    return numero1 - numero2
+def subtracao(a, b):
+    return a - b
 

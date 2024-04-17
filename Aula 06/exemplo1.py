@@ -1,5 +1,4 @@
-# .lower() é uma função que vai transformar o que o usuário digitar em letras minúsculas, fazendo com que dê match com o valor esperado
-# na variável assinante.
+# Sistema de assinatura
 
 
 idade = int(input("Digite sua idade: "))
@@ -10,3 +9,5 @@ if idade >= 18 and assinante == "sim":
 else:
     print("Você não tem acesso ao game pass.")
 
+# .lower() é uma função que vai transformar o que o usuário digitar em letras minúsculas, fazendo com que dê match com o valor esperado
+# na variável assinante.
