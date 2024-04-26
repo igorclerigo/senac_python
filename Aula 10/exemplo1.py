@@ -8,7 +8,7 @@ print(f"O elemento {elemento} aparece {quantidade} vezes na lista que tem um tot
 
 
 
-################ sobre listas
+################ MÉTODOS DA LISTA
 # lista.append
 # lista.count
-# {len(y)}
+# {len(lista)}

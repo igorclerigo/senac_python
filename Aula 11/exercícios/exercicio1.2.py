@@ -31,3 +31,8 @@ while contador != tentativas:
             print("Por favor, insira um número entre 0 e 9.")   
 if(contador == tentativas):
     print(f"Suas tentativas acabaram! O tesouro estava no índice {lugar_tesouro}.")
+
+# por que o locais[lugar_tesouro] = 1 e não == 1 ?
+# por que o locais[lugar_tesouro] = 1 se o índice é sorteado
+# como funciona a função verificar_tesouro?
+# por que o if verificar_tesouro recebe os argumentos palpite, locais se a função recebe indidice, locais ?

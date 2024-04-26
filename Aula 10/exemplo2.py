@@ -11,9 +11,9 @@ print("Lista ordenada:", lista_numeros)
 
 
 
-################ sobre listas
+################ MÉTODOS DOS VETORES
 # lista.append
 # lista.count
-# {len(y)}
+# {len(lista_numeros)}
 # lista.sort() ordem crescente
 # lista.reverse() inverter ordem

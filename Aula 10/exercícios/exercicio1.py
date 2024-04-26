@@ -1,12 +1,12 @@
 # Cafeteria automatizada
-expresso = 10
+"""expresso = 10
 tradicional = 15
 cappuccino = 22
 latte = 18
 descafeinado = 20
 
 
-cafe = input("Qual café vc deseja? ")
+cafe = input("Qual café vc deseja? ").lower()
 
 if cafe == "expresso":
     for x in range(10,-1,-1):
@@ -69,4 +69,4 @@ for i in range(tempo, 0, -1):
     time.sleep(1)  # Espera 1 segundo
 
 # Mensagem de sucesso
-print(f"Seu {tipo} está pronto! Aproveite!")"""
+print(f"Seu {tipo} está pronto! Aproveite!")

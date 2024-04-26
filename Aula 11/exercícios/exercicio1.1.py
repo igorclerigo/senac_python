@@ -18,5 +18,18 @@ while contador != tentativas:
                 print("Não é esse o local do tesouro. Tente novamente.")
         else:
             print("Por favor, insira um número entre 0 e 9.") 
+
+
 if(contador == tentativas):
     print(f"Suas tentativas acabaram! O tesouro estava no índice .")
+
+
+# comparar com o código do exercicio1.py
+# por que deu 2 tabs abaixo do while?
+# por que consegue finalizar o loop sem usar break ou quit no último if?
+# erro de lógica - continua o loop mesmo após acertar
+# Qual o significado de if 0 <= palpite <= 9: ? 
+    #Eu faria: if (palpite >= 0) and (palpite <= 9): 
+
+
+

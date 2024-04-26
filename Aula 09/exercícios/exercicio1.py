@@ -1,4 +1,4 @@
-from utils import dobro, multiplicacao
+from utils import dobro
 
 # Entrada do usuário
 limite_atual = float(input("Digite o limite atual do seu cartão de crédito: R$"))

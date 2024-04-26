@@ -17,7 +17,7 @@ while True:
     else:
         print("número inválido")"""
 
-soma = 0 #inicializ a soma dos números
+soma = 0 # inicializa a variável de soma dos números
 continuar = True
 
 while continuar:
@@ -29,14 +29,19 @@ while continuar:
 
     if opcao == "1":
         numero = input("Digite um número para adicionar à soma: ")
-        soma += float(numero) # adiciona o número à soma total
-        print(f"Número {numero} adicionado à soma.")
+        if numero > "0":
+            soma += float(numero)  # Adiciona o número à soma total
+            print(f"Número {numero} adicionado à soma.")
+        else:
+            print("Numero invalido")
     
     if opcao == "2":
         print(f"Soma atual: {soma}") # exibe a soma atual
     
     if opcao == "3":
-        continuar = False # altera o valor da variável de ontrole para false para sair do loop
+        continuar = False # altera o valor da variável de controle para false para sair do loop
+
+    else:    
         print("Opção inválida. Por favor, escolha 1, 2 ou 3.") # mensagem para opção errada.
 print("Programa encerrado. Soma final: ", soma) # exibe a soma final quando o loop termina. 
 

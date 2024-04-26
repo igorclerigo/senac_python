@@ -27,7 +27,7 @@ while numero_rodadas == 0:
         print(f"O atleta {numeroAtleta} lançou a uma distancia de {distanciaporatleta} metros")
         numeroAtleta += 1
     numero_rodadas += 1
-    print(numero_rodadas)
+    
 
     lista_atletas.sort()
     lista_atletas.reverse()

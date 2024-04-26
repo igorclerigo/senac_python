@@ -1,4 +1,4 @@
-
+"""
 quantidade_de_alunos = int(input("Quantos alunos possuem nesta turma? "))
 
 lista = []
@@ -15,9 +15,9 @@ contagem1 = lista.count(repetido1)
 contagem2 = lista.count(repetido2)
 
 print(f"Os elementos {repetido1} e {repetido2} aparecem {contagem1} e {contagem2} vezes na lista, respectivamente.")
-
-
 """
+
+
 # Perguntar quantos alunos tem na turma
 numero_alunos = int(input("Quantos alunos tem na turma? "))
 
@@ -37,4 +37,4 @@ contagem_valentina = lista_alunos.count("valentina")
 # Exibir resultados
 print(f"Total de alunos na turma: {numero_alunos}")
 print(f"Quantidade de alunos chamados Enzo: {contagem_enzo}")
-print(f"Quantidade de alunos chamados Valentina: {contagem_valentina}") """
+print(f"Quantidade de alunos chamados Valentina: {contagem_valentina}") 
