@@ -14,6 +14,7 @@ while contador != tentativas:
         if 0 <= palpite <= 9:  # Verifica se o palpite está dentro do intervalo
             if locais[palpite] == 1:
                 print("voce encontrou")
+                break
             else:
                 print("Não é esse o local do tesouro. Tente novamente.")
         else:

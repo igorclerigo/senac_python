@@ -1,5 +1,5 @@
 import random
-def verificar_tesouro(indice, locais):
+def verificar_tesouro(indice):
     if locais[indice] == 1:
         return (True)
     else:
@@ -22,7 +22,7 @@ while contador != tentativas:
         contador += 1
         palpite = int(input("Escolha um índice para procurar o tesouro: "))  
         if 0 <= palpite <= 9:  # Verifica se o palpite está dentro do intervalo
-            if verificar_tesouro(palpite, locais) == True:
+            if verificar_tesouro(palpite) == True:
                 print("Parabéns! Você encontrou o tesouro!")
                 break
             else:
@@ -32,7 +32,8 @@ while contador != tentativas:
 if(contador == tentativas):
     print(f"Suas tentativas acabaram! O tesouro estava no índice {lugar_tesouro}.")
 
-# por que o locais[lugar_tesouro] = 1 e não == 1 ?
+# por que o locais[lugar_tesouro] = 1 e não == 1 ? atribuindo e recebendo valor sao diferentes!
 # por que o locais[lugar_tesouro] = 1 se o índice é sorteado
 # como funciona a função verificar_tesouro?
 # por que o if verificar_tesouro recebe os argumentos palpite, locais se a função recebe indidice, locais ?
+# o palpite vai virar o indice e a funçao vai checar se o argumento indice dentro da funçao possui conteudo 1

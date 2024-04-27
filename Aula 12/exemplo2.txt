@@ -1,0 +1,8 @@
+Qual seria a classe para os seguintes objetos:
+Coado, expresso e cappuccino.
+
+R: Café
+
+Diga 3 objetos para a classe carro.
+
+R: Porsche, Mini e BMW

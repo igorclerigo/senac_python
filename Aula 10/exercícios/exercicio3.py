@@ -32,7 +32,7 @@ while numero_rodadas == 0:
     lista_atletas.sort()
     lista_atletas.reverse()
     print("Lançamentos ordenados:", lista_atletas)
-
+numeroAtleta=1
 while numero_rodadas == 1:
     print("round 02")
     for i in range(1,7):
