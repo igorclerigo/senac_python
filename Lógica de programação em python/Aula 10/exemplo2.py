@@ -7,10 +7,6 @@ lista_numeros.sort()
 print("Lista ordenada:", lista_numeros)
 
 
-
-
-
-
 ################ MÉTODOS DOS VETORES
 # lista.append
 # lista.count

@@ -1,5 +1,5 @@
 # Lista com dez espaços inicialmente vazios (representados por 0)
-locais = [0,0,1,0,0,0,0,0,0,0]
+locais = [0,0,0,0,0,0,0,0,3,0]
 # Define o número de tentativas
 tentativas = 3
 print("Bem-vindo ao jogo de caça ao tesouro!")
@@ -12,7 +12,7 @@ while contador != tentativas:
         contador += 1
         palpite = int(input("Escolha um índice para procurar o tesouro: "))  
         if 0 <= palpite <= 9:  # Verifica se o palpite está dentro do intervalo
-            if locais[palpite] == 1:
+            if locais[palpite] == 3: # SE O VALOR DA POSIÇÃO DO PALPITE FOR 3, ESTÁ CERTO, POIS É NECESSÁRIO PALPITAR SOBRE EM QUAL POSIÇÃO ESTÁ O VALOR 3.
                 print("voce encontrou")
                 break
             else:

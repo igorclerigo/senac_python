@@ -1,4 +1,5 @@
 # Criação de matriz 2x2
+# A matriz é feita de linhas e colunas (matriz bidimensional), uma estrutura de listas aninhadas.
 matriz = [
     ["Caio", "Maria"],
     ["Lorena", "Julia"]
@@ -10,6 +11,6 @@ print(a)
 
 # Impressão da matriz
 print("Matriz:")
-for linha in matriz:
-    print(linha)
+for percorrer in matriz:
+    print(percorrer)
 

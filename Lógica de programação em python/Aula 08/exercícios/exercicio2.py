@@ -28,21 +28,22 @@ while continuar:
     opcao = input("Escolha sua opção (1, 2 ou 3): ") #recebe o valor do usuário
 
     if opcao == "1":
-        numero = input("Digite um número para adicionar à soma: ")
-        if numero > "0":
-            soma += float(numero)  # Adiciona o número à soma total
+        numero = float(input("Digite um número para adicionar à soma: "))
+        if numero > 0:
+            soma += numero  # Adiciona o número à soma total
             print(f"Número {numero} adicionado à soma.")
         else:
             print("Numero invalido")
     
-    if opcao == "2":
+    elif opcao == "2":
         print(f"Soma atual: {soma}") # exibe a soma atual
     
-    if opcao == "3":
+    elif opcao == "3":
         continuar = False # altera o valor da variável de controle para false para sair do loop
 
     else:    
         print("Opção inválida. Por favor, escolha 1, 2 ou 3.") # mensagem para opção errada.
+
 print("Programa encerrado. Soma final: ", soma) # exibe a soma final quando o loop termina. 
 
             

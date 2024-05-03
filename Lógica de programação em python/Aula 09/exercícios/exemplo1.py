@@ -20,3 +20,4 @@ elif operacao == 5:
     print("Programa encerrado")
 else:
     print("Erro. Escolha entre os números 1 e 5")
+
