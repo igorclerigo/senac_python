@@ -1,0 +1,16 @@
+bootstrap é um framework 
+instruções container e container-fluid (são classes prontas do bootstrap)
+classes sao sempre pra estilizar
+
+ex: <div class ="container">
+</div>
+
+a classe row representa a linha de 12 col
+a classe col-12 representa o pedaço de tamanho 12 da row, ou seja, completa
+da pra configurar o tamanho da row de acordo com o tamanho da tela. ex: sm, md, lg col-sm-5 col-md-5
+
+o h1 vai ser sobre prioridade para o google (continua a lógica anterior)
+e o display vai ser para customizar o tamanho da fonte
+
+
+<p class="h1"><del>h1</del></p> errado semanticamente, eu configurei como h1, mas indico para o google que é um parágrafo.
