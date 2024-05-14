@@ -14,3 +14,6 @@ e o display vai ser para customizar o tamanho da fonte
 
 
 <p class="h1"><del>h1</del></p> errado semanticamente, eu configurei como h1, mas indico para o google que é um parágrafo.
+
+documentação bootstrap:
+https://getbootstrap.com/docs/5.3/content/reboot/
