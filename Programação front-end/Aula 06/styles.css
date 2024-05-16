@@ -57,12 +57,12 @@
 
 
 main{
-    background-color: whitesmoke;
+    background-color: #F2F2F2;
 }
 
 
 nav {
-    background-color: ghostwhite;
+    background-color: #F2F2F2;
     display: flex;
     justify-content: flex-end;
     padding-top: 8px;
@@ -171,7 +171,7 @@ nav {
 
 
 footer {
-  background-color: ghostwhite; /* Cor de fundo */
+  background-color: #F2F2F2; /* Cor de fundo */
   color: black; /* Cor do texto */
   padding: 40px 0; /* Espaçamento interno */
   position: relative; /* Fixa o rodapé na parte inferior da janela */
