@@ -1,3 +1,5 @@
+
+
 #imghome{
     width:80%; 
     height:80%;
@@ -155,7 +157,10 @@ nav {
         position: absolute;
         transform: translateY(-50%);  
     }
+.testes{
+font-size: 10px;
 
+}
     #logo1{
         width: 200px;
         height: 200px;
