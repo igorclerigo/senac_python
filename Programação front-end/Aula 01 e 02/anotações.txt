@@ -1,0 +1,43 @@
+NOME DE ARQUIVO:
+index.html # É geralmente é o arquivo principal quando falamos em estrutura de sites.
+
+TAGS HTML:
+    Estrutura:
+<title></title> # A tag title serve para nomear o site.
+<html></html> # A tag html serve para guardar as outras tags que formam o conteúdo da página (tanto de configuração quanto de conteúdo em si).
+<html lang="pt-br"> # O lang dentro da tag html serve para informar ao google que deve entregar o site para pessoas que buscam conteúdo em português.
+<head></head> # A tag head guarda os arquivos de configuração do site. Estes serão carregados antes dos arquivos de conteúdo da página.
+<body></body> # A tag body guard os arquivos de conteúdo da página.
+
+    Conteúdo:
+<h1></h1> # A tag h1 se refere ao título da página.
+<p></p> # A tag p é usada para criar parágrafos.
+<a href="url">texto ou objeto do link</a>. # A tag . a href serve para levar o usuário até outra página ou até outra da parte da mesma página.
+- Forma de usar:
+Devo indicar um link de outra página ou o ID do conteúdo que está dentro da mesma página onde se encontra a tag.
+
+OBS:
+A tag de título funciona com ordem de prioridade, de forma que, h1 será mostrado antes de h2 e, por conseguinte.
+
+TAGS CSS:
+<style></style> # A tag style serve para personalizar o conteúdo do site.
+- Forma de usar:
+Devo indicar o que desejo personalizar, por exemplo, uma tag de título de ou parágrafo. 
+Para personalizar um parágrafo é necessário identificá-lo com um id e no momento da personalização, indicar este id.
+
+EX:
+<style>
+        h1{
+            fonte-size: 30px;
+        }
+         #primeiroparagrafo{
+            font-size: 10px;
+            color:blue;
+        }
+    </style>
+
+* checar adobe color wheel
+* https://color.adobe.com/pt/create/image * cores de acordo c a imagem!
+
+
+
