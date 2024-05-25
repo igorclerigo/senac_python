@@ -10,7 +10,7 @@ if (carro >= 0) and (carro <= 50):
 
 elif (carro > 50) and (carro <= 80):
     valor = fipe
-    print(fipe)
+    print(valor)
     
 elif (carro > 80) and (carro <= 100):
     valor = fipe + fipe * (20/100)
