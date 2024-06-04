@@ -47,61 +47,57 @@ print(f"OQ1 {lista_corredores1,lista_tempo1}, OQ2 {lista_corredores2,lista_tempo
 # EXEMPLO DO PROFESSOR
 
 """ 
-classificatoria1= [], []
-classificatoria2= [], []
-classificatoria3 =[], []
+print("Bem vindo ao Programa de Classificação")
 
-# Coletando dados para a primeira classificatória com 7 pilotos
-print("Digite o nome e o melhor tempo dos 7 pilotos da primeira classificatória (nome:tempo):")
+lista_classificacion,lista_tempo = [], []
+lista_classificacion1,lista_tempo1 = [], []
+lista_classificacion2,lista_tempo2 = [], []
+
+print("Digite o nome dos 7 primeiros pilotos e tempo da Q1")
+for i in range(7):
+    nome = input(f"Q1 Piloto {i+1}:")
+    tempo = input(f"Q1 Tempo {i+1}:")
+    lista_classificacion.append(nome)
+    lista_tempo.append(tempo)
+    print(f"O {lista_classificacion[i]} Ficou com o Tempo de {lista_tempo[i]}m")
+
+print("Digite o nome dos 5 primeiros pilotos e tempo da Q2 ")
+for i in range(5):
+    nome = input(f"Q2 Piloto {i+1}:")
+    tempo = input(f"Q2 Tempo {i+1}:")
+    lista_classificacion1.append(nome)
+    lista_tempo1.append(tempo)
+    print(f"O {lista_classificacion1[i]} Ficou com o Tempo de {lista_tempo1[i]}m")
+
+print("Digite o nome dos 3 primeiros pilotos e tempo da Q3 ")
 for i in range(3):
-    entrada = input(f"Piloto {i+1}: ").split(":")
-    nome = entrada[0]# matrizes para armazenar os dados das classificatórias
+    nome = input(f"Q3 Piloto {i+1}:")
+    tempo = input(f"Q3 Tempo {i+1}:")
+    lista_classificacion2.append(nome)
+    lista_tempo2.append(tempo)
+    print(f"O {lista_classificacion2[i]} Ficou com o Tempo de {lista_tempo2[i]}m")
 
-    tempo = float(entrada[1])
-    classificatoria1.append(nome,tempo)
-
-
-# Coletando dados para a segunda classificatória com 5 pilotos
-print("Digite o nome e o melhor tempo dos 5 pilotos da segunda classificatória (nome:tempo):")
-for i in range(2):
-    entrada = input(f"Piloto {i+1}: ").split(":")
-    nome = entrada[0]
-    tempo = float(entrada[1])
-    classificatoria2.append(nome,tempo)
-
-# Coletando dados para a terceira classificatória com 3 pilotos
-print("Digite o nome e o melhor tempo dos 3 pilotos da terceira classificatória (nome:tempo):")
-for i in range(2):
-    entrada = input(f"Piloto {i+1}: ").split(":")
-    nome = entrada[0]
-    tempo = float(entrada[1])
-    classificatoria3.append(nome,tempo)
-
-# Imprimindo as matrizes das classificatórias
 print("\nResultados da Primeira Classificatória:")
 print("Pilotos: ")
-for nome in nomes_classificatoria1:
+for nome in lista_classificacion:
     print(nome, end=", ")
 print("\nTempos: ")
-for tempo in tempos_classificatoria1:
+for tempo in lista_tempo:
     print(f"{tempo:.2f} segundos", end=", ")
 
-print("\n\nResultados da Segunda Classificatória:")
+print("\nResultados da Segunda Classificatória:")
 print("Pilotos: ")
-for nome in nomes_classificatoria2:
+for nome in lista_classificacion1:
     print(nome, end=", ")
 print("\nTempos: ")
-for tempo in tempos_classificatoria2:
+for tempo in lista_tempo1:
     print(f"{tempo:.2f} segundos", end=", ")
 
-print("\n\nResultados da Terceira Classificatória:")
+print("\nResultados da Terceira Classificatória:")
 print("Pilotos: ")
-for nome in nomes_classificatoria3:
+for nome in lista_classificacion2:
     print(nome, end=", ")
 print("\nTempos: ")
-for tempo in tempos_classificatoria3:
+for tempo in lista_tempo2:
     print(f"{tempo:.2f} segundos", end=", ")
-
-
-
 """
