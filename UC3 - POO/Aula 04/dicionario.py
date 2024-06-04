@@ -1,5 +1,7 @@
 
 # Criando o dicionário de inventário
+# dicionario = {"chave": valor}, um dicionário é uma coleção de pares chave-valor.
+
 inventario = {"maçãs": 30, "bananas": 45, "laranjas": 25}
 
 while True:
@@ -11,8 +13,8 @@ while True:
         produto = input("Digite o nome do produto: ")
         quantidade = int(input("Digite a quantidade: "))
         
-        if produto in inventario:
-            inventario[produto] += quantidade
+        if produto in inventario: #(return true or false)
+            inventario[produto] += quantidade # acessa o valor associado à chave produto no dicionário inventario. equivalente a -> inventario[produto] = inventario[produto] + quantidade.
             print(f"Estoque de {produto} atualizado para {inventario[produto]}.")
         else:
             print("Produto não encontrado no inventário.")

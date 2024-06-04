@@ -1,4 +1,4 @@
-while True:
+while True: #loop infinito
     entrada = input("Digite cinco nomes separados por vírgulas: ")
     nomes = entrada.split(",")
 

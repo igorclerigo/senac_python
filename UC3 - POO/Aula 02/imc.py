@@ -16,7 +16,7 @@ def calculo_de_imc():
 
     except ValueError:
         xd.set_value("resultado", "Valor errado, tente de novo!")
-      
+
 xd.create_viewport(title = "Calculadora de IMC", width=600, height=300)
 
 with xd.window(label = "Inserção de dados", width=600, height=300):

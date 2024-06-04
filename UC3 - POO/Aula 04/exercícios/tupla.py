@@ -1,12 +1,11 @@
 
-entrada_de_dados = input("Informe cinco nomes para preencher a tupla: ").lower()
+entrada_de_dados = input("Informe cinco nomes para preencher a tupla: (coloque vírgula entre os nomes)").lower()
 nomes = entrada_de_dados.split(",") # O split é um comando que leva a inferir que estamos tratando de uma lista
 tupla_de_nomes = tuple(nomes)
 
 if len(tupla_de_nomes) != 5:
     print("Você não respeitou a quantidade de elementos, refaça!")
 else:
-    
     checar_nomes = input("Informe o nome para checar se ele está presente na lista: ")
 
     if checar_nomes in tupla_de_nomes:

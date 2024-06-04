@@ -16,9 +16,8 @@ while sessoes == 0:
         entrada_tempo = input(f"Informe o tempo recorde em horas conquistado pelo corredor {entrada_nome}: ")
         lista_corredores1.append(entrada_nome)
         lista_tempo1.append(entrada_tempo)
-        lista_tempo1.sort()
         print(lista_corredores1, lista_tempo1)
-        sessoes += 1
+    sessoes = sessoes + 1
 
 print()
 while sessoes == 1:
@@ -29,7 +28,7 @@ while sessoes == 1:
         lista_corredores2.append(entrada_nome)
         lista_tempo2.append(entrada_tempo)
         print(lista_corredores2, lista_tempo2)
-        sessoes += 1
+    sessoes += 1
 
 print()
 while sessoes == 2:
@@ -40,7 +39,7 @@ while sessoes == 2:
         lista_corredores3.append(entrada_nome)
         lista_tempo3.append(entrada_tempo)
         print(lista_corredores3, lista_tempo3)
-        sessoes +=1
+    sessoes += 1
 
 print(f"OQ1 {lista_corredores1,lista_tempo1}, OQ2 {lista_corredores2,lista_tempo2}, OQ3 {lista_corredores3,lista_tempo3}" )
 
