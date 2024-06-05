@@ -10,6 +10,8 @@ locais = [0] * 10
 # Coloca o tesouro (representado pelo número 1) em um índice aleatório
 lugar_tesouro = random.randint(0, 9)
 locais[lugar_tesouro] = 1
+
+print(locais, lugar_tesouro)
 # Define o número de tentativas
 tentativas = 3
 print("Bem-vindo ao jogo de caça ao tesouro!")

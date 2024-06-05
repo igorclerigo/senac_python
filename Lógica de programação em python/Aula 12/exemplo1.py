@@ -1,6 +1,7 @@
 # Cria uma matriz 9x9 representando um armário escolar vazio, onde cada slot inicialmente contém 'vazio'
 armario = [["vazio"] * 9 for linha in range(9)]
-
+for linha in armario:
+    print(linha)
 """
 Entendo melhor assim:
 
