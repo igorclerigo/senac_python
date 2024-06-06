@@ -1,0 +1,1 @@
+#treinei funções no jogo do py.checkio.org
