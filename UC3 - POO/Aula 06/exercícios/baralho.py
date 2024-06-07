@@ -1,6 +1,6 @@
 # Baralho de cartas
 
-"""" GPTECO
+GPTECO:
 
 import random
 
@@ -28,9 +28,7 @@ print("\nCartas depois de ordenar:")
 for carta in cartas_ordenadas:
     print(carta)
 
-"""
-
-""" PROFESSOR:
+PROFESSOR:
 import random  # Importa o módulo random para gerar números aleatórios
 
 # Função para gerar três números aleatórios
@@ -68,4 +66,3 @@ numeros_ordenados = ordenar_numeros(numeros_aleatorios)
 numeros_convertidos = converter_numeros(numeros_ordenados)
 print(f"Números ordenados e convertidos: {numeros_convertidos}")
 
-"""
