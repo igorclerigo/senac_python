@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <style>
+        .produto {
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        .produto img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Produtos</h1>
+    <div class="produtos">
+        {% for produto in produtos %}
+            <div class="produto">
+                <h2>{{ produto.nome }}</h2>
+                <p>Marca: {{ produto.marca }}</p>
+                <img src="{{ url_for('static', filename=produto.caminho_imagem) }}" alt="{{ produto.nome }}">
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
