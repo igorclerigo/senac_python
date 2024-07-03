@@ -2,6 +2,7 @@ from flask import Flask, request, render_template, send_file
 import os
 import PIL.Image
 import google.generativeai as genai
+import mysql.connector
 
 app = Flask(__name__)
 
@@ -14,6 +15,21 @@ def analyze_image(image_path):
     model = genai.GenerativeModel(model_name="gemini-1.5-flash")
     response = model.generate_content(["O meu banco de dados está estruturado com uma tabela chamada produtos e possui duas colunas, são elas: categoria de roupa e cor de roupa. eu quero que você analise a cor e a categoria da roupa, se é um casaco, calça ou tênis e qual é a cor. Me devolva uma consulta em mysql que mostre roupas que combinem", img])
     return response.text
+
+# Função para executar a consulta SQL no banco de dados
+def execute_query(query):
+    db = mysql.connector.connect(
+        host="127.0.0.1",
+        user="root",
+        password="",
+        database="moda"
+    )
+    cursor = db.cursor()
+    cursor.execute(query)
+    results = cursor.fetchall()
+    cursor.close()
+    db.close()
+    return results
 
 # Rota para a página inicial com o formulário de upload
 @app.route("/")
@@ -47,8 +63,19 @@ def upload_file():
     # Realiza a análise da imagem
     analysis_result = analyze_image(file_path)
 
-    # Retorna o resultado da análise
-    return f"Resultado da análise: {analysis_result}"
+    # Executa a consulta no banco de dados
+    query = analysis_result.strip()  # Certifique-se de que a consulta está no formato correto
+    db_results = execute_query(query)
+
+    # Verifica se há resultados
+    if not db_results:
+        return "Nenhuma roupa encontrada que combine."
+
+    # Busca o caminho da imagem da primeira roupa que combina
+    image_path = db_results[0][2]  # Assumindo que o caminho da imagem está na terceira coluna
+
+    # Retorna a imagem da roupa que combina
+    return send_file(image_path, mimetype='image/jpeg')
 
 if __name__ == "__main__":
     app.run(debug=True)
