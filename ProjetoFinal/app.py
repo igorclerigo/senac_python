@@ -79,3 +79,55 @@ def upload_file():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+
+# Definindo as roupas
+roupa1_tipo = "camisa"
+roupa2_tipo = "calça"
+roupa3_tipo = "tênis"
+
+# Definindo as cores
+cor1_ton1 = "vermelho"
+cor1_ton2 = "verde"
+cor1_ton3 = "azul"
+
+# Peças de roupa e cores a serem avaliadas
+peca1_tipo = "camisa"
+cor1 = "vermelho"
+peca2_tipo = "calça"
+cor2 = "verde"
+peca3_tipo = "tênis"
+cor3 = "azul"
+
+# Avaliação de tipo de roupa
+tipo_combina = False
+
+if (peca1_tipo == roupa1_tipo and peca2_tipo == roupa2_tipo) or (peca1_tipo == roupa2_tipo and peca2_tipo == roupa3_tipo) or (peca1_tipo == roupa1_tipo and peca2_tipo == roupa3_tipo):
+    tipo_combina = True
+elif (peca2_tipo == roupa1_tipo and peca3_tipo == roupa2_tipo) or (peca2_tipo == roupa2_tipo and peca3_tipo == roupa3_tipo) or (peca2_tipo == roupa1_tipo and peca3_tipo == roupa3_tipo):
+    tipo_combina = True
+elif (peca1_tipo == roupa1_tipo and peca3_tipo == roupa2_tipo) or (peca1_tipo == roupa2_tipo and peca3_tipo == roupa3_tipo) or (peca1_tipo == roupa1_tipo and peca3_tipo == roupa3_tipo):
+    tipo_combina = True
+
+# Avaliação de cor
+cor_combina = False
+
+if (cor1 == cor1_ton1 and cor2 == cor1_ton2) or (cor1 == cor1_ton2 and cor2 == cor1_ton3) or (cor1 == cor1_ton1 and cor2 == cor1_ton3):
+    cor_combina = True
+elif (cor2 == cor1_ton1 and cor3 == cor1_ton2) or (cor2 == cor1_ton2 and cor3 == cor1_ton3) or (cor2 == cor1_ton1 and cor3 == cor1_ton3):
+    cor_combina = True
+elif (cor1 == cor1_ton1 and cor3 == cor1_ton2) or (cor1 == cor1_ton2 and cor3 == cor1_ton3) or (cor1 == cor1_ton1 and cor3 == cor1_ton3):
+    cor_combina = True
+
+# Resultado da avaliação
+if tipo_combina and cor_combina:
+    resultado = "Combinação Ideal!"
+elif tipo_combina:
+    resultado = "Combinação de Tipo Ok"
+elif cor_combina:
+    resultado = "Combinação de Cor Ok"
+else:
+    resultado = "Combinação Não Recomendada"
+
+print(resultado)
+

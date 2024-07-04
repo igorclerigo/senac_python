@@ -13,3 +13,20 @@ INSERT INTO produtos (categoria_roupa, cor_roupa, imagem_path) VALUES
     ('calça', 'preto', 'C:/Users/Igor/Documents/GitHub/senac_python/ProjetoFinal/produto1.jpg'),
     ('tênis', 'azul', 'C:/Users/Igor/Documents/GitHub/senac_python/ProjetoFinal/produto3.jpg');
     
+--------------------------------------------------------------------------------------------------------------
+
+CREATE DATABASE moda;
+USE moda;
+CREATE TABLE roupas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    tipo VARCHAR(50) NOT NULL,
+    cor VARCHAR(50) NOT NULL
+);
+
+INSERT INTO roupas (tipo, cor) VALUES
+('camisa', 'vermelho'),
+('calça', 'verde'),
+('tênis', 'azul'),
+('camisa', 'verde'),
+('calça', 'azul'),
+('tênis', 'vermelho');
