@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de Imagem</title>
+</head>
+<body>
+    <h1>Upload de Imagem e Escolha da Ocasião</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <label for="occasion">Escolha a ocasião:</label>
+        <select name="occasion" id="occasion" required>
+            <option value="casual">Casual</option>
+            <option value="formal">Formal</option>
+            <option value="esporte">Esporte</option>
+            <option value="festa">Festa</option>
+            <!-- Adicione mais opções conforme necessário -->
+        </select>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>

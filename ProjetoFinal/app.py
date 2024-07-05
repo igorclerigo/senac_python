@@ -81,12 +81,12 @@ if __name__ == "__main__":
     app.run(debug=True)
 
 
-# Definindo as roupas
+# TIPOS DE ROUPA
 roupa1_tipo = "camisa"
 roupa2_tipo = "calça"
 roupa3_tipo = "tênis"
 
-# Definindo as cores
+# CORES
 cor1_ton1 = "vermelho"
 cor1_ton2 = "verde"
 cor1_ton3 = "azul"
